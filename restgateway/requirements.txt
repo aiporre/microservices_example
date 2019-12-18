@@ -1,0 +1,11 @@
+Flask
+connexion
+swagger_ui_bundle
+connexion[swagger-ui]
+Flask-Injector
+fastavro
+elasticsearch
+boto
+grpcio
+grpcio-tools
+numpy

@@ -1,0 +1,31 @@
+micro sevices by Allen Holub
+
+--- microservices desing phylosiphy
+1. microsevices are small. There are microservices that run 1000 of them
+2. Independly deployable: replace x by y with changing anything else
+3. DDD
+4. logging
+5. No testing.. unitesting. no manual testing. high random
+6. They are objects:
+  1. delegation!
+  2. hide data
+  3. do things!
+7. You should not know hwo is talking to? no ip or names!
+8. BASIC RULE: raplacement principle. YOU SHOU BE ABEL TO RADICALLY CANGE THE IMPLEMENTATIO OF A CLS WITHOUTIMPATNING THE CLIENTS.
+9. Bounded context: way of model business. Example
+  1. context of store:
+    1. books: name author
+    2. cashier..
+  2. context warehouse:
+    1. books:how heavy, size
+  3. Context microservices are isolated!!! they connecte via ports. Ubiquity languages which is a kind a languages. translateing procols
+10. UI: the agent architecture.
+  1. each view has it own controller database and private comunitaion api
+11. Comunication. No SOAP, No REST. Nothing CRUD! accessing data!
+--------
+
+microservices in healthcare
+
+------
+1. DDD is the ideal software desing paradigm that fits nature of microsevices very well
+2. The model should reflect the structure of 

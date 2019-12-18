@@ -1,0 +1,22 @@
+// the compilation command:
+//    python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./radiology.proto
+syntax = "proto3";
+
+//The service called radiology implements image processing modules
+service RadiologyService {
+    //an example of getting a feature
+    rpc slice (Patient) returns (Image) {}
+}
+
+message Patient {
+    //Patient context message
+    int32 id = 1;
+    string name = 2;
+}
+
+message Image {
+    //Image context message
+    repeated int32 data = 1;
+    int32 xdim = 2;
+    int32 ydim = 3;
+}
