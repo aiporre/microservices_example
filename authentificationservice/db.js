@@ -51,16 +51,20 @@ createCollection = function (collection){
     })
 }
 
-getByUser = function(user) {
+getByUser = function (user) {
     return database().then(client => {
-            var query = {user: user};
-            console.log('query is :' +  JSON.stringify(query));
-            client.collection("users").find(query).toArray(function (err, result) {
+        var query = {user: user};
+        console.log('query is :' + JSON.stringify(query));
+        return new Promise((resolve, reject) => {
+            client.db(config.db.name).collection("users").find(query).toArray(function (err, result) {
+                console.log('----> ' + JSON.stringify( result[0]))
                 if (err) throw err;
-                if (length(result) > 1) throw 'Database corrupted! Multiple users with same user name';
+                if (result.length > 1) throw 'Database corrupted! Multiple users with same user name';
                 client.close();
-                return result[0];
+                resolve(result[0].user);
             });
+        })
+
         }
     )
 }
