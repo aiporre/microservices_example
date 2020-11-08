@@ -1,0 +1,4 @@
+# ignore modules
+node_modules
+# ignore lockfiles
+package-lock.json
