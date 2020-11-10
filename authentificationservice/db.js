@@ -57,11 +57,12 @@ getByUser = function (user) {
         console.log('query is :' + JSON.stringify(query));
         return new Promise((resolve, reject) => {
             client.db(config.db.name).collection("users").find(query).toArray(function (err, result) {
-                console.log('----> ' + JSON.stringify( result[0]))
+                console.log('----> ' + JSON.stringify( result[0]));
                 if (err) throw err;
                 if (result.length > 1) throw 'Database corrupted! Multiple users with same user name';
                 client.close();
-                resolve(result[0].user);
+                if (result.length == 0) resolve(null);
+                else resolve(result[0].user);
             });
         })
 
@@ -70,4 +71,24 @@ getByUser = function (user) {
 }
 
 
-module.exports = {getByUser, save, createCollection};
+getById = function (user) {
+    return database().then(client => {
+            var query = {user: user};
+            console.log('query is :' + JSON.stringify(query));
+            return new Promise((resolve, reject) => {
+                client.db(config.db.name).collection("users").find(query).toArray(function (err, result) {
+                    console.log('----> ' + JSON.stringify( result[0]));
+                    if (err) throw err;
+                    if (result.length > 1) throw 'Database corrupted! Multiple users with same user name';
+                    client.close();
+                    if (result.length == 0) resolve(null);
+                    else resolve(result[0].id);
+                });
+            })
+
+        }
+    )
+}
+
+
+module.exports = {getById, getByUser, save, createCollection};
