@@ -9,6 +9,8 @@
 <script>
 import Patients from "@/components/Patients";
 import Header from "@/components/layout/Header";
+import axios from 'axios';
+
 
 export default {
   name: 'App',
@@ -42,6 +44,11 @@ export default {
     viewPatient(id){
       this.patients = this.patients.filter(patient => patient.id !== id)
     }
+  },
+  created() {
+    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
+        .then(res => this.todos = res.data)
+        .catch(err => console.log(err));
   }
 
 }
