@@ -1,4 +1,9 @@
-# frontend
+# frontendservice
+
+Very simple front end application.
+* Display patients list
+* Renders patient information
+* Apply enhancement filters
 
 ## Project setup
 ```
