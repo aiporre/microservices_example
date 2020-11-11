@@ -3,7 +3,8 @@ FROM mhart/alpine-node:14
 RUN mkdir /code
 WORKDIR /code
 ADD . /code/
-RUN node install
+RUN rm -rf node_modules/
+RUN npm install
 
 EXPOSE 3000
 

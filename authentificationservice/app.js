@@ -8,6 +8,8 @@ const express = require('express');
 const bodyparser = require('body-parser');
 const Promise = require('promise');
 const router = require('./router');
+const cors = require('cors');
+const methodOverride = require('method-override')
 
 const flash = require('express-flash');
 const session = require('express-session');
@@ -24,9 +26,10 @@ function create_app() {
     console.log('1');
     return new Promise( (resolve,reject) => {
         const app = express()
-
+        app.use(express.static(__dirname + '/public'));
         app.engine('html', require('ejs').renderFile);
         app.set('view engine', 'html');
+        app.use(cors())
         app.use(bodyparser.json())
         app.use(express.urlencoded({extended: false}))
         app.use(flash())
@@ -37,6 +40,8 @@ function create_app() {
         }))
         app.use(passport.initialize())
         app.use(passport.session())
+        app.use(methodOverride('_method'))
+
 
         resolve(app)
         }
@@ -46,6 +51,7 @@ function create_app() {
     })
 
 }
+
 
 
 create_app().then( app => {

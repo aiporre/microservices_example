@@ -62,7 +62,7 @@ getByUser = function (user) {
                 if (result.length > 1) throw 'Database corrupted! Multiple users with same user name';
                 client.close();
                 if (result.length == 0) resolve(null);
-                else resolve(result[0].user);
+                else resolve(result[0]);
             });
         })
 
@@ -71,9 +71,9 @@ getByUser = function (user) {
 }
 
 
-getById = function (user) {
+getById = function (id) {
     return database().then(client => {
-            var query = {user: user};
+            var query = {_id: ObjectID(id)};
             console.log('query is :' + JSON.stringify(query));
             return new Promise((resolve, reject) => {
                 client.db(config.db.name).collection("users").find(query).toArray(function (err, result) {
@@ -82,7 +82,7 @@ getById = function (user) {
                     if (result.length > 1) throw 'Database corrupted! Multiple users with same user name';
                     client.close();
                     if (result.length == 0) resolve(null);
-                    else resolve(result[0].id);
+                    else resolve(result[0]);
                 });
             })
 

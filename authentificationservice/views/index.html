@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#includedContent").load("base.html");
+        });
+    </script>
 </head>
-<body>
-<h1> This in my index page </h1>
-<div><a href="/login" > Login</a></div>
-<div><a href="/register" > Register</a></div>
 
+
+
+
+<body>
+<div id="includedContent"></div>
+
+
+<div class="container">
+    <div class="header">
+        <h1> Doctor Dashboard</h1>
+    </div>
+
+    <h1 style="text-decoration: #555555 underline"> Index </h1>
+    <div><a href="/login"> Login</a></div>
+    <div><a href="/register"> Register</a></div>
+    <div>
+        <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit" class="btn">Log Out</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>

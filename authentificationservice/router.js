@@ -1,19 +1,33 @@
 const auth = require('./auth')
 const passport = require("passport");
 
+
 function router(app) {
+    // add method override to the the app
     // home index
-    app.get('/', (req, res) => {
+    app.get('/', auth.checkAuthenticated,(req, res) => {
         // obtain us and pa from request
         // ...
         res.render('index.html')
     });
 
+    app.get('/home', auth.checkAuthenticated,(req, res) => {
+        // obtain us and pa from request
+        // ...
+        res.redirect('/')
+    });
+
+    app.get('/dashboard', auth.checkAuthenticated,(req, res) => {
+        // obtain us and pa from request
+        // ...
+        res.redirect('http://localhost:8080')
+    });
+
     // register
-    app.get('/register', (req, res) => {
+    app.get('/register', auth.checkAuthenticated, (req, res) => {
         res.render('register.html')
     })
-    app.post('/register', (req, res) => {
+    app.post('/register', auth.checkAuthenticated, (req, res) => {
         try {
             userData = {user: req.body.name, email: req.body.email, password: req.body.password}
             console.log('saving new user: ' + JSON.stringify(userData))
@@ -28,10 +42,10 @@ function router(app) {
     })
 
     // Login
-    app.get('/login', (req, res) => {
+    app.get('/login', auth.checkNotAuthenticated, (req, res) => {
         res.render('login.html')
     })
-    app.post('/login',
+    app.post('/login', auth.checkNotAuthenticated,
         passport.authenticate('local', {
             successRedirect: '/',
             failureRedirect: '/login',
@@ -48,6 +62,11 @@ function router(app) {
         })
 
     });
+
+    app.delete('/logout', (req, res) => {
+        req.logOut()
+        res.redirect('/login')
+    })
     return app
 }
 

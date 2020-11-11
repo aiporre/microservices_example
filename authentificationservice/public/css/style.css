@@ -1,0 +1,64 @@
+/* Selector Objects */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+/*Alignments */
+
+.parent {
+    background: transparent;
+    padding: 0px;
+}
+
+.child {
+    border: none;
+    padding: 0px;
+}
+
+.flex-parent {
+    display: flex;
+}
+
+.flex-child-left {
+    flex: 1.5;
+}
+
+.flex-child-right {
+    flex: 0.5;
+    background-color: darkgrey;
+    border-left: 10px black;
+}
+
+/*HEADER */
+.header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.header a {
+    color: #fff;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: #555;
+    color: #fff;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #666;
+}
