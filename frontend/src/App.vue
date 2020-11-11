@@ -17,7 +17,7 @@
 import Patients from "@/components/Patients";
 import Header from "@/components/layout/Header";
 import Report from "@/components/Report";
-// import axios from 'axios';
+import axios from 'axios';
 
 
 export default {
@@ -80,9 +80,11 @@ export default {
       if (reportSaved.length > 0){
         this.report = reportSaved[0];
       } else{
-        console.log('... retrieve data...')
-        const reportSaved = this.reports.filter(p => p.id === 0);
-        this.report = reportSaved[0];
+        axios.get(`http://localhost:9091/v1.0/patient/${id}`).then( res => {
+          console.log('... retrieve data...', JSON.stringify(res))
+          const reportSaved = this.reports.filter(p => p.id === 0);
+          this.report = reportSaved[0];
+        }).catch(err => console.log(err))
       }
       console.log('final output: ' + JSON.stringify(this.report))
 
