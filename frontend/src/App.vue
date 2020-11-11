@@ -3,7 +3,7 @@
     <Header/>
     <div class='parent flex-parent'>
       <div class='child flex-child-left'>
-        <Report  v-bind:reports="reports" v-bind:currentReport="currentReport"  />
+        <Report v-bind:report="report" />
       </div>
       <div class='child flex-child-right'>
         <Patients v-bind:patients="patients" v-on:view-patient="viewPatient"/>
@@ -31,17 +31,17 @@ export default {
     return {
       patients: [
         {
-          id: 0,
+          id: 1,
           name: 'juan',
           available: false
         },
         {
-          id: 1,
+          id: 2,
           name: 'pedro',
           available: true
         },
         {
-          id: 2,
+          id: 3,
           name: 'mario',
           available: false
         }
@@ -53,15 +53,39 @@ export default {
           image: '../assets/snake.png',
           age: '-',
           name: '-',
-          insurrance: '-'
+          affiliation: '-'
+        },
+        {
+          id: 1,
+          image: '../assets/snake.png',
+          age: '50',
+          name: 'Juan Perez',
+          affiliation: 'TK'
         }
       ],
-      currentReport: {id: 0 }// better just in report for now here??
+      report: {
+        id: 0,
+        image: '../assets/snake.png',
+        age: '-',
+        name: '-',
+        affiliation: '-'
+      }
     }
   },
   methods: {
     viewPatient(id) {
-      this.patients = this.patients.filter(patient => patient.id !== id)
+      //
+      const reportSaved = this.reports.filter(p => p.id === id);
+      console.log(JSON.stringify(reportSaved[0]))
+      if (reportSaved.length > 0){
+        this.report = reportSaved[0];
+      } else{
+        console.log('... retrieve data...')
+        const reportSaved = this.reports.filter(p => p.id === 0);
+        this.report = reportSaved[0];
+      }
+      console.log('final output: ' + JSON.stringify(this.report))
+
     }
   },
   // created() {
@@ -98,11 +122,11 @@ body {
 
 .parent {
   background: transparent;
-  padding: 0rem;
+  padding: 0px;
 }
 .child {
   border: none;
-  padding: 1rem;
+  padding: 0px;
 }
 
 .flex-parent {
@@ -113,5 +137,9 @@ body {
 }
 .flex-child-right {
   flex: 0.5;
+  background-color: darkgrey;
+  border-left: 10px black;
 }
+
+
 </style>
