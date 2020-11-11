@@ -31,9 +31,14 @@ services:
       - "8023:15672"
       - "8024:5672"
 
+  authentificationservice:
+    build: authentificationservice
+    ports:
+      - "3000:3000"
+
   elasticsearch:
     image: elasticsearch:5-alpine
-    restart: unless-stopped
+#    restart: unless-stopped
     command: elasticsearch -Etransport.host=127.0.0.1
     environment:
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
