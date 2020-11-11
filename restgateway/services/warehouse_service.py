@@ -31,8 +31,19 @@ class ItemsProvider(object):
     def __init__(self, items: list=[]):
         print('ItemsProvider Created: ', items)
         self._items =items
-    def get(self, number_of_items: int=5) -> list:
+
+    def get_image(self, id, number_of_items: int=5) -> dict:
         print('creating client...')
         client = RadiologyClient()
+        print('request data for id:', id)
         response = client.request(id=0)
-        return [{'data': response}]
+        return {'data': response}
+
+    def get_patients(self) -> list:
+        print('Make request to radiology ...')
+        # publish message to brocker
+        # wait response or repeat
+        print('Make request to Laboratory ...')
+        # publish message
+        # wait response or repeat
+        return [{'id':0, 'name': 'A'},{'id':1, 'name': 'B'},{'id':2, 'name': 'C'}]
