@@ -9,3 +9,4 @@ boto
 grpcio
 grpcio-tools
 numpy
+flask-cors

@@ -7,6 +7,7 @@ from services.warehouse_service import ItemsProvider
 from connexion.resolver import RestyResolver
 import connexion
 import settings
+from flask_cors import CORS
 
 def configure_services(binder: Binder) -> Binder:
     binder.bind(ItemsProvider, to=ItemsProvider([{"Name":"Test 1"},{"Name":"Test 2"},{"Name":"Test 3"},{"Name":"Test 4"},{"Name":"Test 5"}]))
@@ -23,6 +24,7 @@ def configure_app(flask_app):
 if __name__ == '__main__':
     app = connexion.App(__name__,  specification_dir='swagger/')
     flask_app = app.app
+    CORS(flask_app)
     configure_app(flask_app)
     web_port = int(os.environ.get('PORT', settings.FLASK_SERVER_PORT))
     app.add_api('mainapp.yaml', resolver=RestyResolver('api'))
