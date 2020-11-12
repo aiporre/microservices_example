@@ -1,0 +1,22 @@
+GET http://localhost:3000/auth
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:3000/auth
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-07T060231.500.html
+
+###
+
+GET http://localhost:3000/auth
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-07T060052.500.html
+
+###
+

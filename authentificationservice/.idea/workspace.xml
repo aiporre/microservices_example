@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ff5a2788-8e3d-4a2d-8b89-d0bdbc6380dc" name="Default Changelist" comment="added CORS and navigation, and logout button">
+      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
+    <list id="d41cd9df-0c75-4e19-9400-1c1e53d424ca" name="idea" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/authentificationservice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8b01f10a-c951-44e2-894a-3edd5489e90f.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8b01f10a-c951-44e2-894a-3edd5489e90f/storage_v2/_src_/schema/auth.qN0tAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8b01f10a-c951-44e2-894a-3edd5489e90f/storage_v2/_src_/schema/mydb.Kl8zAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2020-11-07T060052.500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2020-11-07T060231.500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="2b914f0d-91d0-456b-8ddc-9cbb5cb62382" name="nothere" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jxISNb4hxlu5FBzlh7EXVI0sxN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mongo" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/db" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/views" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000/auth" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.devStart">
+    <configuration name="http-requests-log#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="secret.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/secret.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="devStart" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="devStart" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.devStart" />
+        <item itemvalue="Node.js.secret.js" />
+        <item itemvalue="Node.js.app.js" />
+        <item itemvalue="Node.js.test.js" />
+        <item itemvalue="HTTP Request.http-requests-log#2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff5a2788-8e3d-4a2d-8b89-d0bdbc6380dc" name="Default Changelist" comment="" />
+      <changelist id="d41cd9df-0c75-4e19-9400-1c1e53d424ca" name="idea" comment="" />
+      <changelist id="2b914f0d-91d0-456b-8ddc-9cbb5cb62382" name="nothere" comment="" />
+      <created>1604739314947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604739314947</updated>
+      <workItem from="1604739316019" duration="16408000" />
+      <workItem from="1604769249164" duration="13608000" />
+      <workItem from="1604844737408" duration="25249000" />
+      <workItem from="1604914898827" duration="144000" />
+      <workItem from="1605001243197" duration="21177000" />
+      <workItem from="1605212503224" duration="1936000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit authentication service with mongodb">
+      <created>1604850486368</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604850486368</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added views, refactored files and added hash password">
+      <created>1604871346627</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604871346627</updated>
+    </task>
+    <task id="LOCAL-00003" summary="removed ejs">
+      <created>1604871459563</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604871459563</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added passportsession save user">
+      <created>1605047587333</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605047587333</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added readme file">
+      <created>1605047905308</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605047905308</updated>
+    </task>
+    <task id="LOCAL-00006" summary="created docker file for auth service">
+      <created>1605048006947</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605048006947</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added CORS and navigation, and logout button">
+      <created>1605123914929</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605123914929</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit authentication service with mongodb" />
+    <MESSAGE value="added views, refactored files and added hash password" />
+    <MESSAGE value="removed ejs" />
+    <MESSAGE value="added passportsession save user" />
+    <MESSAGE value="Added readme file" />
+    <MESSAGE value="created docker file" />
+    <MESSAGE value="created docker file for auth service" />
+    <MESSAGE value="added CORS and navigation, and logout button" />
+    <option name="LAST_COMMIT_MESSAGE" value="added CORS and navigation, and logout button" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="205" y="71" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605215284442">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="205" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1605215284442" />
+    <state x="477" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1604845489645" />
+    <state x="205" y="88" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.827@0.23.1440.827" timestamp="1604864077432" />
+    <state x="477" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1604770366072" />
+    <state x="464" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604879939974">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="464" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1604879939974" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1605123949846">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1605123949846" />
+    <state width="1398" height="404" key="GridCell.Tab.0.bottom" timestamp="1605123949828">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="404" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605123949828" />
+    <state width="1398" height="290" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1604870929476" />
+    <state width="1398" height="177" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1604856285474" />
+    <state width="1398" height="487" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1604866093767" />
+    <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1604742488326" />
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1604782958174" />
+    <state width="1398" height="404" key="GridCell.Tab.0.center" timestamp="1605123949827">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="404" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605123949827" />
+    <state width="1398" height="290" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1604870929475" />
+    <state width="1398" height="177" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1604856285473" />
+    <state width="1398" height="487" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1604866093767" />
+    <state width="1419" height="215" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1604742488325" />
+    <state width="1398" height="221" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1604782958174" />
+    <state width="1398" height="404" key="GridCell.Tab.0.left" timestamp="1605123949826">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="404" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605123949826" />
+    <state width="1398" height="290" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1604870929475" />
+    <state width="1398" height="177" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1604856285472" />
+    <state width="1398" height="487" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1604866093766" />
+    <state width="1419" height="215" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1604742488324" />
+    <state width="1398" height="221" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1604782958173" />
+    <state width="1398" height="404" key="GridCell.Tab.0.right" timestamp="1605123949828">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="404" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605123949828" />
+    <state width="1398" height="290" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1604870929475" />
+    <state width="1398" height="177" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1604856285473" />
+    <state width="1398" height="487" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1604866093767" />
+    <state width="1419" height="215" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1604742488325" />
+    <state width="1398" height="221" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1604782958174" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1605106738214">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605106738214" />
+    <state width="1398" height="267" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1604783213061" />
+    <state width="1398" height="267" key="GridCell.Tab.1.bottom/0.23.1440.830@0.23.1440.830" timestamp="1604779305521" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1605106738212">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605106738212" />
+    <state width="1398" height="267" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1604783213060" />
+    <state width="1398" height="267" key="GridCell.Tab.1.center/0.23.1440.830@0.23.1440.830" timestamp="1604779305521" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1605106738211">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605106738211" />
+    <state width="1398" height="267" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1604783213060" />
+    <state width="1398" height="267" key="GridCell.Tab.1.left/0.23.1440.830@0.23.1440.830" timestamp="1604779305520" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1605106738213">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605106738213" />
+    <state width="1398" height="267" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1604783213060" />
+    <state width="1398" height="267" key="GridCell.Tab.1.right/0.23.1440.830@0.23.1440.830" timestamp="1604779305521" />
+    <state width="1398" height="303" key="GridCell.Tab.2.bottom" timestamp="1605106738216">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605106738216" />
+    <state width="1398" height="267" key="GridCell.Tab.2.bottom/0.23.1440.827@0.23.1440.827" timestamp="1604783213062" />
+    <state width="1398" height="267" key="GridCell.Tab.2.bottom/0.23.1440.830@0.23.1440.830" timestamp="1604779305522" />
+    <state width="1398" height="303" key="GridCell.Tab.2.center" timestamp="1605106738215">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1605106738215" />
+    <state width="1398" height="267" key="GridCell.Tab.2.center/0.23.1440.827@0.23.1440.827" timestamp="1604783213061" />
+    <state width="1398" height="267" key="GridCell.Tab.2.center/0.23.1440.830@0.23.1440.830" timestamp="1604779305522" />
+    <state width="1398" height="303" key="GridCell.Tab.2.left" timestamp="1605106738214">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1605106738214" />
+    <state width="1398" height="267" key="GridCell.Tab.2.left/0.23.1440.827@0.23.1440.827" timestamp="1604783213061" />
+    <state width="1398" height="267" key="GridCell.Tab.2.left/0.23.1440.830@0.23.1440.830" timestamp="1604779305522" />
+    <state width="1398" height="303" key="GridCell.Tab.2.right" timestamp="1605106738216">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1605106738216" />
+    <state width="1398" height="267" key="GridCell.Tab.2.right/0.23.1440.827@0.23.1440.827" timestamp="1604783213061" />
+    <state width="1398" height="267" key="GridCell.Tab.2.right/0.23.1440.830@0.23.1440.830" timestamp="1604779305522" />
+    <state width="1398" height="303" key="GridCell.Tab.3.bottom" timestamp="1605106738219">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605106738219" />
+    <state width="1398" height="267" key="GridCell.Tab.3.bottom/0.23.1440.827@0.23.1440.827" timestamp="1604783213063" />
+    <state width="1398" height="267" key="GridCell.Tab.3.bottom/0.23.1440.830@0.23.1440.830" timestamp="1604779305524" />
+    <state width="1398" height="303" key="GridCell.Tab.3.center" timestamp="1605106738218">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1605106738218" />
+    <state width="1398" height="267" key="GridCell.Tab.3.center/0.23.1440.827@0.23.1440.827" timestamp="1604783213062" />
+    <state width="1398" height="267" key="GridCell.Tab.3.center/0.23.1440.830@0.23.1440.830" timestamp="1604779305523" />
+    <state width="1398" height="303" key="GridCell.Tab.3.left" timestamp="1605106738217">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1605106738217" />
+    <state width="1398" height="267" key="GridCell.Tab.3.left/0.23.1440.827@0.23.1440.827" timestamp="1604783213062" />
+    <state width="1398" height="267" key="GridCell.Tab.3.left/0.23.1440.830@0.23.1440.830" timestamp="1604779305523" />
+    <state width="1398" height="303" key="GridCell.Tab.3.right" timestamp="1605106738218">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1605106738218" />
+    <state width="1398" height="267" key="GridCell.Tab.3.right/0.23.1440.827@0.23.1440.827" timestamp="1604783213063" />
+    <state width="1398" height="267" key="GridCell.Tab.3.right/0.23.1440.830@0.23.1440.830" timestamp="1604779305523" />
+    <state width="233" height="457" key="HiddenNamespacesPopup" timestamp="1604770387634">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="233" height="457" key="HiddenNamespacesPopup/0.23.1440.830@0.23.1440.830" timestamp="1604770387634" />
+    <state x="526" y="134" key="RollbackChangesDialog" timestamp="1605118020585">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="526" y="134" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605118020585" />
+    <state x="526" y="147" key="RollbackChangesDialog/0.23.1440.830@0.23.1440.830" timestamp="1604741353069" />
+    <state x="229" y="57" key="SettingsEditor" timestamp="1605008689475">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="57" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605008689475" />
+    <state x="229" y="76" key="SettingsEditor/0.23.1440.829@0.23.1440.829" timestamp="1604742549840" />
+    <state x="229" y="76" key="SettingsEditor/0.23.1440.830@0.23.1440.830" timestamp="1604769233087" />
+    <state x="395" y="293" key="VCS.ChangelistChooser" timestamp="1604871436685">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="395" y="293" key="VCS.ChangelistChooser/0.23.1440.825@0.23.1440.825" timestamp="1604871436685" />
+    <state x="470" y="249" key="VCS.EditChangelistDialog" timestamp="1604871396405">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="470" y="249" key="VCS.EditChangelistDialog/0.23.1440.825@0.23.1440.825" timestamp="1604871396405" />
+    <state x="312" y="167" key="Vcs.Push.Dialog.v2" timestamp="1605123867672">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="312" y="167" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605123867672" />
+    <state x="312" y="176" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1604871472525" />
+    <state x="312" y="176" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1604850506254" />
+    <state x="521" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604857285144">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="521" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.826@0.23.1440.826" timestamp="1604857285144" />
+    <state x="421" y="51" width="598" height="797" key="find.popup" timestamp="1605111288204">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="51" width="598" height="797" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1605111288204" />
+    <state x="421" y="70" width="598" height="735" key="find.popup/0.23.1440.830@0.23.1440.830" timestamp="1604781008480" />
+    <state x="385" y="163" width="670" height="737" key="search.everywhere.popup" timestamp="1604879774487">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="163" width="670" height="737" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604879774487" />
+    <state x="385" y="173" width="670" height="676" key="search.everywhere.popup/0.23.1440.826@0.23.1440.826" timestamp="1604852279065" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/passport-local/lib/strategy.js</url>
+          <line>69</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/auth.js</url>
+          <line>60</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
