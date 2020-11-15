@@ -46,4 +46,9 @@ class ItemsProvider(object):
         print('Make request to Laboratory ...')
         # publish message
         # wait response or repeat
+        # TODO: return like this..{
+        #           id: 1,
+        #           name: 'juan',
+        #           available: false
+        #         }
         return [{'id':0, 'name': 'A'},{'id':1, 'name': 'B'},{'id':2, 'name': 'C'}]

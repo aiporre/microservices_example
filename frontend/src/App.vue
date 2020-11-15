@@ -30,6 +30,7 @@ export default {
   data() {
     return {
       patients: [
+        // TODO: Hard coded
         {
           id: 1,
           name: 'juan',
@@ -48,6 +49,7 @@ export default {
 
       ],
       reports: [
+        // TODO: Hard coded...
         {
           id: 0,
           image: '../assets/snake.png',
@@ -74,14 +76,22 @@ export default {
   },
   methods: {
     viewPatient(id) {
-      //
+      // Searchs the report in the cache "reports"
       const reportSaved = this.reports.filter(p => p.id === id);
-      console.log(JSON.stringify(reportSaved[0]))
+      console.log('cached report... ' + JSON.stringify(reportSaved[0]))
+
+      // if report found... use it.
       if (reportSaved.length > 0){
         this.report = reportSaved[0];
       } else{
+        // else... obtains report from server
         axios.get(`http://localhost:9091/v1.0/patient/${id}`).then( res => {
-          console.log('... retrieve data...', JSON.stringify(res))
+          // TODO: add validation
+
+          //response should contain the fields {id: (int), name: (string), image: (bytes string),...
+          //                                    age: (string), diagnosis: (string)}
+          console.log('Retrieved data...', JSON.stringify(res))
+          //TEMPORARY CODE: it should store in cache and return report
           const reportSaved = this.reports.filter(p => p.id === 0);
           this.report = reportSaved[0];
         }).catch(err => console.log(err))
@@ -91,8 +101,9 @@ export default {
     }
   },
   // created() {
-  //   axios.get('http://localhost/9090:/')
-  //       .then(res => this.todos = res.data)
+  //  obtains all patients to populate
+  //   axios.get('http://localhost/9090/v1.0/patients')
+  //       .then(res => this.patients = res.data)
   //       .catch(err => console.log(err));
   // }
 
