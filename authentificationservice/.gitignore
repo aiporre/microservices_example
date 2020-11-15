@@ -1,6 +1,8 @@
+
+.idea
 # ignore modules
 node_modules
+# ignore enviromental variables
+.env
 # ignore lockfiles
 package-lock.json
-.env
-.idea
