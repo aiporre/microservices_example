@@ -16,7 +16,7 @@ RUN mongo -version
 RUN mkdir -p /data/db
 RUN apk add openrc --no-cache
 RUN rc-update add mongodb
-
+RUN mongod --fork --syslog
 
 EXPOSE 3000
 

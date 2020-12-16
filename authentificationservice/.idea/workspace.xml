@@ -19,27 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff5a2788-8e3d-4a2d-8b89-d0bdbc6380dc" name="Default Changelist" comment="added CORS and navigation, and logout button">
-      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+    <list default="true" id="ff5a2788-8e3d-4a2d-8b89-d0bdbc6380dc" name="Default Changelist" comment="modified gitignore in fontend service">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8b01f10a-c951-44e2-894a-3edd5489e90f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8b01f10a-c951-44e2-894a-3edd5489e90f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
     </list>
-    <list id="d41cd9df-0c75-4e19-9400-1c1e53d424ca" name="idea" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/authentificationservice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8b01f10a-c951-44e2-894a-3edd5489e90f.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8b01f10a-c951-44e2-894a-3edd5489e90f/storage_v2/_src_/schema/auth.qN0tAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8b01f10a-c951-44e2-894a-3edd5489e90f/storage_v2/_src_/schema/mydb.Kl8zAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2020-11-07T060052.500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2020-11-07T060231.500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list id="d41cd9df-0c75-4e19-9400-1c1e53d424ca" name="idea" comment="" />
     <list id="2b914f0d-91d0-456b-8ddc-9cbb5cb62382" name="nothere" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.devStart">
+  <component name="RunManager" selected="Node.js.secret.js">
     <configuration name="http-requests-log#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -169,7 +155,9 @@
       <workItem from="1604844737408" duration="25249000" />
       <workItem from="1604914898827" duration="144000" />
       <workItem from="1605001243197" duration="21177000" />
-      <workItem from="1605212503224" duration="1936000" />
+      <workItem from="1605212503224" duration="4254000" />
+      <workItem from="1605373360622" duration="290000" />
+      <workItem from="1608119918918" duration="1101000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit authentication service with mongodb">
       <created>1604850486368</created>
@@ -220,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605123914929</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="install and setup mongodb in Dockerfile. Mod entry point run.sh">
+      <created>1605226198567</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605226198567</updated>
+    </task>
+    <task id="LOCAL-00009" summary="modified gitignore in fontend service">
+      <created>1605444651180</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605444651180</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,13 +249,15 @@
     <MESSAGE value="created docker file" />
     <MESSAGE value="created docker file for auth service" />
     <MESSAGE value="added CORS and navigation, and logout button" />
-    <option name="LAST_COMMIT_MESSAGE" value="added CORS and navigation, and logout button" />
+    <MESSAGE value="install and setup mongodb in Dockerfile. Mod entry point run.sh" />
+    <MESSAGE value="modified gitignore in fontend service" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified gitignore in fontend service" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="205" y="71" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605215284442">
+    <state x="205" y="71" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605226013600">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="205" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1605215284442" />
+    <state x="205" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1605226013600" />
     <state x="477" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1604845489645" />
     <state x="205" y="88" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.827@0.23.1440.827" timestamp="1604864077432" />
     <state x="477" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1604770366072" />
@@ -388,9 +392,10 @@
     <state x="229" y="57" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605008689475" />
     <state x="229" y="76" key="SettingsEditor/0.23.1440.829@0.23.1440.829" timestamp="1604742549840" />
     <state x="229" y="76" key="SettingsEditor/0.23.1440.830@0.23.1440.830" timestamp="1604769233087" />
-    <state x="395" y="293" key="VCS.ChangelistChooser" timestamp="1604871436685">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state x="395" y="295" key="VCS.ChangelistChooser" timestamp="1605226239513">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="395" y="295" key="VCS.ChangelistChooser/0.0.1440.900@0.0.1440.900" timestamp="1605226239513" />
     <state x="395" y="293" key="VCS.ChangelistChooser/0.23.1440.825@0.23.1440.825" timestamp="1604871436685" />
     <state x="470" y="249" key="VCS.EditChangelistDialog" timestamp="1604871396405">
       <screen x="0" y="23" width="1440" height="825" />
@@ -402,6 +407,10 @@
     <state x="312" y="167" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605123867672" />
     <state x="312" y="176" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1604871472525" />
     <state x="312" y="176" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1604850506254" />
+    <state x="558" y="344" width="337" height="211" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1608120237803">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="558" y="344" width="337" height="211" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1440.900@0.0.1440.900" timestamp="1608120237803" />
     <state x="521" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604857285144">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
